@@ -1,7 +1,8 @@
 body {
-  background: url('../img/space-background.jpg');
-  background-size: cover;
-  background-position-x: -2px;
+  background: #000 url('../img/space-background.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position-x: -1px;
   font-family: Roboto, sans-serif;
   color: rgb(240, 243, 254)
 }
@@ -66,4 +67,8 @@ header .lead-intro {
   background-size: 100%;
   background-position-y: -100px;
 
+}
+
+.flip-clock-divider .flip-clock-label {
+  color: #eee;
 }
