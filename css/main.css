@@ -1,0 +1,69 @@
+body {
+  background: url('../img/space-background.jpg');
+  background-size: cover;
+  background-position-x: -2px;
+  font-family: Roboto, sans-serif;
+  color: rgb(240, 243, 254)
+}
+
+@font-face {
+  font-family: Arwing;
+  src: url(https://static1.squarespace.com/static/ta/58f0f670ff7c50d19776494d/109/assets/Arwing.ttf)
+}
+
+header, footer, section {
+  min-height: 20rem;
+  display: block;
+}
+
+section {
+  min-height: 30rem;
+  display: flex;
+}
+
+section > .section-inner {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header {
+  color: #fff;
+  text-align: center;
+}
+
+header h2 {
+  font-family: 'Arwing', 'Titillium Web', sans-serif;
+  text-shadow: 0 0 10px rgba(206, 209, 226, 0.62);
+  font-size: 7vw !important;
+}
+
+h1, h3, h3, h4 {
+  font-family: Oswald, sans-serif;
+}
+
+header .lead-intro {
+  font-family: Oswald, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(84, 86, 94, 0.82);
+}
+
+.section1 {
+  background: url('../img/NM_00.jpg');
+  background-size: 100%;
+  background-position-y: -260px;
+
+}
+
+.section2 {
+  background: url('../img/JB_00.jpg');
+  background-size: 100%;
+  /*background-position-y: -100px;*/
+
+}
+
+.section3 {
+  background: url('../img/ES_00.jpg');
+  background-size: 100%;
+  background-position-y: -100px;
+
+}

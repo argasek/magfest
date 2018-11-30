@@ -1,0 +1,21 @@
+{
+  "name": "magfest-demoparty",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Jakub Argasiński <jakub@argasinski.eu>",
+  "homepage": "https://party.magfest.org",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "server:prod": "ws -c --directory . --port 8000 --spa index.html"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "local-web-server": "^2.6.0"
+  },
+  "engines": {
+    "node": ">= 8.0.0",
+    "yarn": ">= 1.12"
+  }
+}
