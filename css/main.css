@@ -1,8 +1,6 @@
 body {
-  background: #000 url('../img/space-background.jpg');
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position-x: -1px;
+  background: url('../img/space-background.jpg');
+  background-size: cover;
   font-family: Roboto, sans-serif;
   color: rgb(240, 243, 254)
 }
@@ -12,18 +10,35 @@ body {
   src: url(https://static1.squarespace.com/static/ta/58f0f670ff7c50d19776494d/109/assets/Arwing.ttf)
 }
 
+a {
+  color: #fff07e;
+}
+a:hover {
+  color: #fff07e;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters > .col, .no-gutters  > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 header, footer, section {
   min-height: 20rem;
   display: block;
 }
 
-section {
-  min-height: 30rem;
+article {
   display: flex;
 }
 
-section > .section-inner {
-  background-color: rgba(0, 0, 0, 0.5);
+.article-inner {
+  padding: 1rem;
+  min-height: 300px;
 }
 
 header {
@@ -37,7 +52,7 @@ header h2 {
   font-size: 7vw !important;
 }
 
-h1, h3, h3, h4 {
+h1, h2, h3, h4 {
   font-family: Oswald, sans-serif;
 }
 
@@ -45,19 +60,64 @@ header .lead-intro {
   font-family: Oswald, sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  text-shadow: 0 0 10px rgba(84, 86, 94, 0.82);
+  text-shadow: 0 0 10px rgba(84, 86, 94, 0.92);
+}
+
+.section-container {
+  background-repeat: no-repeat;
+  background-size: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6)
+}
+
+.section-container p {
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+.section-container h2 {
+  text-shadow: 0 0 10px rgba(206, 209, 226, 0.62);
+  font-size: 4em !important;
+  text-align: center;
+}
+
+.section1-container {
+  background: #234 url('../img/NM_00.jpg');
+  background-position: center center;
+}
+
+.section2-container {
+  background: #234 url('../img/DSCF3018.jpg');
+}
+
+.section1-container .article-inner {
+  background-color: rgba(39, 74, 147, 0.47);
+  border: 1px solid rgba(91, 117, 173, 0.88);
+}
+
+.section2-container .article-inner {
+  background-color: rgba(147, 39, 113, 0.73);
+  border: 1px solid rgba(160, 91, 154, 0.88);
+}
+
+@media (min-width: 1280px) {
+  .section-container {
+    background-size: 100%;
+    background-position: top left;
+  }
 }
 
 .section1 {
-  background: url('../img/NM_00.jpg');
-  background-size: 100%;
-  background-position-y: -260px;
+  /*background: url('../img/NM_00.jpg');*/
+  /*background-size: 100%;*/
+  /*background-position-y: 0;*/
 
 }
 
 .section2 {
-  background: url('../img/JB_00.jpg');
-  background-size: 100%;
+  /*background: url('../img/NM_00.jpg');*/
+  /*background-size: 100%;*/
+  /*background-position-y: 0px;*/
+  /*background: url('../img/JB_00.jpg');*/
+  /*background-size: 100%;*/
   /*background-position-y: -100px;*/
 
 }
@@ -67,8 +127,4 @@ header .lead-intro {
   background-size: 100%;
   background-position-y: -100px;
 
-}
-
-.flip-clock-divider .flip-clock-label {
-  color: #eee;
 }
