@@ -28,7 +28,7 @@ a:hover {
 }
 
 header, footer, section {
-  min-height: 20rem;
+  min-height: 4rem;
   display: block;
 }
 
@@ -79,6 +79,10 @@ header .lead-intro {
   text-align: center;
 }
 
+.section-container h3 {
+  font-size: 2.25rem;
+}
+
 .section1-container {
   background: #234 url('../img/NM_00.jpg');
   background-position: center center;
@@ -86,6 +90,14 @@ header .lead-intro {
 
 .section2-container {
   background: #234 url('../img/DSCF3018.jpg');
+}
+
+.section3-container {
+  background: #234 url('../img/IMG_9205.jpg');
+}
+
+.section4-container {
+  background: #234 url('../img/TD_00rot.jpg');
 }
 
 .section1-container .article-inner {
@@ -96,6 +108,16 @@ header .lead-intro {
 .section2-container .article-inner {
   background-color: rgba(147, 39, 113, 0.73);
   border: 1px solid rgba(160, 91, 154, 0.88);
+}
+
+.section3-container .article-inner {
+  background-color: rgba(55, 147, 67, 0.73);
+  border: 1px solid rgba(67, 160, 6, 0.88);
+}
+
+.section4-container .article-inner {
+  background-color: rgba(39, 74, 147, 0.65);
+  border: 1px solid rgba(91, 117, 173, 0.88);
 }
 
 @media (min-width: 1280px) {
