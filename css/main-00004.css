@@ -2,7 +2,7 @@ body {
   background: url('../img/space-background.jpg');
   background-size: cover;
   font-family: Roboto, sans-serif;
-  color: rgb(240, 243, 254)
+  color: rgb(5, 15, 29);
 }
 
 @font-face {
@@ -89,7 +89,7 @@ header .lead-intro {
 }
 
 .section2-container {
-  background: #234 url('../img/DSCF3018.jpg');
+  background: #234 url('../img/DSCF3018.jpg') center top;
 }
 
 .section3-container {
@@ -127,22 +127,6 @@ header .lead-intro {
   }
 }
 
-.section1 {
-  /*background: url('../img/NM_00.jpg');*/
-  /*background-size: 100%;*/
-  /*background-position-y: 0;*/
-
-}
-
-.section2 {
-  /*background: url('../img/NM_00.jpg');*/
-  /*background-size: 100%;*/
-  /*background-position-y: 0px;*/
-  /*background: url('../img/JB_00.jpg');*/
-  /*background-size: 100%;*/
-  /*background-position-y: -100px;*/
-
-}
 
 .section3 {
   background: url('../img/ES_00.jpg');
