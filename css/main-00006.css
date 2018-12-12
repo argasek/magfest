@@ -1,8 +1,8 @@
 body {
-  background: url('../img/space-background.jpg');
+  background-image: url('../img/space-background.jpg');
   background-size: cover;
   font-family: Roboto, sans-serif;
-  color: rgb(5, 15, 29);
+  color: rgb(240, 243, 254);
 }
 
 @font-face {
@@ -84,20 +84,19 @@ header .lead-intro {
 }
 
 .section1-container {
-  background: #234 url('../img/NM_00.jpg');
-  background-position: center center;
+  background: #234 center center;
 }
 
 .section2-container {
-  background: #234 url('../img/DSCF3018.jpg') center top;
+  background: #234 center top;
 }
 
 .section3-container {
-  background: #234 url('../img/IMG_9205.jpg');
+  background: #234;
 }
 
 .section4-container {
-  background: #234 url('../img/TD_00rot.jpg');
+  background: #234;
 }
 
 .section1-container .article-inner {
@@ -120,6 +119,18 @@ header .lead-intro {
   border: 1px solid rgba(91, 117, 173, 0.88);
 }
 
+.partner-container {
+  font-size: 80%;
+  max-width: 734px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partner-container > p {
+  color: #ddd;
+}
+
 @media (min-width: 1280px) {
   .section-container {
     background-size: 100%;
@@ -127,6 +138,25 @@ header .lead-intro {
   }
 }
 
+@media (min-width: 992px) {
+  .partner {
+    display: block;
+    height: 120px;
+  }
+}
+
+@media (max-width: 991px) {
+  .partner:first-child {
+    /*display: block;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+  }
+  .partner {
+    height: 80px;
+    display: inline-block;
+    margin-top: 3px;
+  }
+}
 
 .section3 {
   background: url('../img/ES_00.jpg');

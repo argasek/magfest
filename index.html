@@ -17,13 +17,27 @@
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:400,700,300|Roboto:700,700i,300i,300,400i,400"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:900">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main-00004.css">
+  <link rel="stylesheet" href="css/main-00006.css">
 </head>
 
 <body>
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
+
+  <script>
+    (function(w, d){
+      var b = d.getElementsByTagName('body')[0];
+      var s = d.createElement("script");
+      var v = !("IntersectionObserver" in w) ? "8.16.0" : "10.18.0";
+      s.async = true; // This includes the script as async. See the "recipes" section for more information about async loading of LazyLoad.
+      s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+      w.lazyLoadOptions = {
+        elements_selector: ".lazy"
+      };
+      b.appendChild(s);
+    }(window, document));
+  </script>
 
   <header>
     <div class="col-md-8 p-lg-5 pt-lg-0 mx-auto">
@@ -34,7 +48,7 @@
     </div>
   </header>
 
-  <div class="container section-container section1-container">
+  <div class="lazy container section-container section1-container" data-bg="url('../img/NM_00.jpg')">
     <section class="pt-3">
       <h2>What?</h2>
       <article class="row pt-3 d-flex align-self-stretch">
@@ -92,7 +106,7 @@
     </section>
   </div>
 
-  <div class="container section-container section2-container mt-4 mt-lg-5">
+  <div class="lazy container section-container section2-container mt-4 mt-lg-5" data-bg="url(../img/DSCF3018.jpg)">
     <section class="pt-3">
       <h2>Party!</h2>
       <article class="row pt-3 d-flex align-self-stretch">
@@ -164,7 +178,7 @@
 
   </div>
 
-  <div class="container section-container section3-container mt-4 mt-lg-5">
+  <div class="lazy container section-container section3-container mt-4 mt-lg-5" data-bg="url('../img/IMG_9205.jpg')">
     <section class="pt-3">
       <h2>Non-demo competitions</h2>
       <article class="row pt-3 d-flex align-self-stretch">
@@ -218,7 +232,7 @@
     </section>
   </div>
 
-  <div class="container section-container section4-container mt-4 mt-lg-5">
+  <div class="lazy container section-container section4-container mt-4 mt-lg-5" data-bg="url('../img/TD_00rot.jpg')">
     <section class="pt-3">
       <h2>Demo competitions</h2>
       <article class="row pt-3 d-flex align-self-stretch">
@@ -245,6 +259,9 @@
               <li>If case of oldschool platforms, please bring your own hardware or at least <a href="mailto:demoparty@magfest.org">contact us</a> beforehand and provide also a video-capture of your entry running from a real hardware.</li>
               <li>In the worst case, we'll run it from an emulator.</li>
             </ul>
+
+            <h5>Compo machine specification:</h5>
+            <p>i7 7700K quad-core CPU at 4.2GHz, 2 NVIDIA GTX TITAN X Pascal GPUs (12GB VRAM per GPU), 32GB DDR4 3866 RAM, Windows 10 x64 or Ubuntu Linux.</p>
           </div>
         </div>
 
@@ -255,12 +272,19 @@
 
 
   <div class="container">
-    <p class="text-center mt-2">We hate to say it, but the party website is a WIP. We'll make it final as soon as we can!</p>
-    <footer class="text-center text-secondary small">
-      <p class="mt-2">Photographs by: Joe Baldovin, Tom Doherty, Nick Mauer, Emi Spicer, Steve Vansickle, Justin Maramba and Bradley Pearce. Thank YOU!</p>
+    <footer class="text-center">
+      <p class="text-center mt-2 mt-md-4 mb-1">We hate to say it, but the party website is still a WIP. We'll make it final as soon as we can!</p>
+      <div class="partner-container pt-2">
+        <p class="mb-2">The demoparty is presented and organized in partnership with MAGFest, the Polish Cultural Institute New York and with support of the Embassy of the Republic of Poland in Washington DC.</p>
+        <div class="d-lg-flex justify-content-center">
+          <img data-src="img/embassy.png" class="lazy partner">
+          <img data-src="img/pciny.png" class="lazy partner ml-lg-2 mr-lg-2">
+          <img data-src="img/magfest.png" class="lazy partner" >
+        </div>
+      </div>
+      <p class="mt-2 small text-secondary">Photographs by: Joe Baldovin, Tom Doherty, Nick Mauer, Emi Spicer, Steve Vansickle, Justin Maramba and Bradley Pearce. Thank YOU!</p>
     </footer>
   </div>
-
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
